@@ -1,10 +1,12 @@
 package Net::Google::CalendarV3::Calendar;
-$Net::Google::CalendarV3::Calendar::VERSION = '0.01';
+$Net::Google::CalendarV3::Calendar::VERSION = '0.02';
 use Moose;
 use Kavorka;
 use Try::Tiny;
 use Types::Standard qw( Str Int Bool ArrayRef HashRef );
 use Net::Google::CalendarV3::Types qw( DefaultReminder ListOfNotificationSettings);
+use Net::Google::CalendarV3::DefaultReminder;
+use Net::Google::CalendarV3::NotificationSettings;
 
 has [ qw( kind etag id accessRole deleted description location primary summary timeZone ) ], is => 'ro';
 has [ qw(   summaryOverride
