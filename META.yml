@@ -21,4 +21,4 @@ requires:
   WWW::JSON: 0
 resources:
   repository: http://github.com/suitesetup/net-google-calendar
-version: 0.03
+version: 0.04

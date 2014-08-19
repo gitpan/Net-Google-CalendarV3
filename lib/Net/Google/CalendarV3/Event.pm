@@ -1,5 +1,5 @@
 package Net::Google::CalendarV3::Event;
-$Net::Google::CalendarV3::Event::VERSION = '0.03';
+$Net::Google::CalendarV3::Event::VERSION = '0.04';
 use Moose;
 with 'Net::Google::CalendarV3::ToJson';
 use Kavorka qw(method multi);
@@ -47,6 +47,14 @@ multi method title ($title) {
 
 multi method title () {
     $self->summary;
+}
+
+multi method content ($content) {
+    $self->description($content);
+}
+
+multi method content () {
+    $self->description;
 }
 
 multi method when (DateTime $start, DateTime $end, Bool $is_all_day) {

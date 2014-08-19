@@ -1,5 +1,5 @@
 package Net::Google::CalendarV3::Types;
-$Net::Google::CalendarV3::Types::VERSION = '0.03';
+$Net::Google::CalendarV3::Types::VERSION = '0.04';
 use Type::Library
    -base,
    -declare => qw(  DefaultReminder NotificationSettings ListOfNotificationSettings
