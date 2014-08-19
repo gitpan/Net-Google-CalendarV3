@@ -13,6 +13,7 @@ meta-spec:
   version: 1.4
 name: Net-Google-CalendarV3
 requires:
+  DateTime::Format::ISO8601: 0
   JSON::XS: 0
   Kavorka: 0
   Moose: 0
@@ -21,4 +22,4 @@ requires:
   WWW::JSON: 0
 resources:
   repository: http://github.com/suitesetup/net-google-calendar
-version: 0.04
+version: 0.05

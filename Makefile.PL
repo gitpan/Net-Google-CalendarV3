@@ -20,6 +20,7 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Net::Google::CalendarV3",
   "PREREQ_PM" => {
+    "DateTime::Format::ISO8601" => 0,
     "JSON::XS" => 0,
     "Kavorka" => 0,
     "Moose" => 0,
@@ -27,7 +28,7 @@ my %WriteMakefileArgs = (
     "Types::Standard" => 0,
     "WWW::JSON" => 0
   },
-  "VERSION" => "0.04",
+  "VERSION" => "0.05",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -35,6 +36,7 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "DateTime::Format::ISO8601" => 0,
   "JSON::XS" => 0,
   "Kavorka" => 0,
   "Moose" => 0,

@@ -1,5 +1,5 @@
 package Net::Google::CalendarV3::Calendar;
-$Net::Google::CalendarV3::Calendar::VERSION = '0.04';
+$Net::Google::CalendarV3::Calendar::VERSION = '0.05';
 use Moose;
 use Kavorka;
 use Try::Tiny;
