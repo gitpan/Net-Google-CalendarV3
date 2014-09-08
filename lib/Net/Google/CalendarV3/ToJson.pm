@@ -1,5 +1,5 @@
 package Net::Google::CalendarV3::ToJson;
-$Net::Google::CalendarV3::ToJson::VERSION = '0.06';
+$Net::Google::CalendarV3::ToJson::VERSION = '0.07';
 use Moose::Role;
 use Kavorka;
 

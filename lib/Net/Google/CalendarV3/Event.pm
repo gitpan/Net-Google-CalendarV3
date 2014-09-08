@@ -1,5 +1,5 @@
 package Net::Google::CalendarV3::Event;
-$Net::Google::CalendarV3::Event::VERSION = '0.06';
+$Net::Google::CalendarV3::Event::VERSION = '0.07';
 use Moose;
 with 'Net::Google::CalendarV3::ToJson';
 use Kavorka qw(method multi);

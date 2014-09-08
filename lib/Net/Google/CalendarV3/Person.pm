@@ -1,5 +1,5 @@
 package Net::Google::CalendarV3::Person;
-$Net::Google::CalendarV3::Person::VERSION = '0.06';
+$Net::Google::CalendarV3::Person::VERSION = '0.07';
 use Moose;
 with 'Net::Google::CalendarV3::ToJson';
 has [ qw( id email displayName self ) ], is => 'ro';

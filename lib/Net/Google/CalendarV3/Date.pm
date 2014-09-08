@@ -1,11 +1,11 @@
 package Net::Google::CalendarV3::Date;
-$Net::Google::CalendarV3::Date::VERSION = '0.06';
+$Net::Google::CalendarV3::Date::VERSION = '0.07';
 use Moose;
 use Kavorka;
 use DateTime::Format::ISO8601;
 with 'Net::Google::CalendarV3::ToJson';
 use Net::Google::CalendarV3::Types qw( CBool DateTime );
-has $_, is => 'ro', clearer => "clear_$_" for qw( date dateTime timeZone );
+has $_, is => 'rw', clearer => "clear_$_" for qw( date dateTime timeZone );
 
 method set (DateTime $dt, CBool $is_all_day) {
     if ($is_all_day) {
