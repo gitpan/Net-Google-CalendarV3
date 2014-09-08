@@ -1,5 +1,5 @@
 package Net::Google::CalendarV3::NotificationSettings;
-$Net::Google::CalendarV3::NotificationSettings::VERSION = '0.05';
+$Net::Google::CalendarV3::NotificationSettings::VERSION = '0.06';
 use Moose;
 with 'Net::Google::CalendarV3::ToJson';
 use Types::Standard qw( Str );
