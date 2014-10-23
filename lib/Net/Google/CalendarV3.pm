@@ -1,5 +1,5 @@
 package Net::Google::CalendarV3;
-$Net::Google::CalendarV3::VERSION = '0.09';
+$Net::Google::CalendarV3::VERSION = '0.10';
 =head NAME
 
 Net::Google::CalendarV3 - Access Google Calendars using the v3 API
@@ -52,7 +52,7 @@ method get_events (%filters) {
     my $res = $self->_service->get('/calendars/[% calendarId %]/events', { -calendarId => $self->_current_calendar, %filters });
     die $res->error unless $res->success;
     my @items = @{ $res->res->{items} };
-    while (my $pt = $res->{nextPageToken}) {
+    while (my $pt = $res->res->{nextPageToken}) {
         $filters{pageToken} = $pt;
         $res = $self->_service->get('/calendars/[% calendarId %]/events', { -calendarId => $self->_current_calendar, %filters });
         push @items, @{ $res->res->{items} };
