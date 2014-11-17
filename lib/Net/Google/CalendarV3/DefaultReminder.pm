@@ -1,5 +1,5 @@
 package Net::Google::CalendarV3::DefaultReminder;
-$Net::Google::CalendarV3::DefaultReminder::VERSION = '0.10';
+$Net::Google::CalendarV3::DefaultReminder::VERSION = '0.11';
 use Moose;
 with 'Net::Google::CalendarV3::ToJson';
 use Types::Standard qw( Str Int );

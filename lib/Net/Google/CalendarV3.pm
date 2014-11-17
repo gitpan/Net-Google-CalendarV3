@@ -1,5 +1,5 @@
 package Net::Google::CalendarV3;
-$Net::Google::CalendarV3::VERSION = '0.10';
+$Net::Google::CalendarV3::VERSION = '0.11';
 =head NAME
 
 Net::Google::CalendarV3 - Access Google Calendars using the v3 API
