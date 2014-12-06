@@ -1,5 +1,5 @@
 package Net::Google::CalendarV3::Attendee;
-$Net::Google::CalendarV3::Attendee::VERSION = '0.12';
+$Net::Google::CalendarV3::Attendee::VERSION = '0.13';
 use Moose;
 with 'Net::Google::CalendarV3::ToJson';
 extends 'Net::Google::CalendarV3::Person';

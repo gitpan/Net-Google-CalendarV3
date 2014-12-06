@@ -1,5 +1,5 @@
 package Net::Google::CalendarV3::Date;
-$Net::Google::CalendarV3::Date::VERSION = '0.12';
+$Net::Google::CalendarV3::Date::VERSION = '0.13';
 use Moose;
 use Kavorka;
 use DateTime::Format::ISO8601;

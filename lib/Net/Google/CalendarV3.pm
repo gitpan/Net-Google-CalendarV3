@@ -1,5 +1,5 @@
 package Net::Google::CalendarV3;
-$Net::Google::CalendarV3::VERSION = '0.12';
+$Net::Google::CalendarV3::VERSION = '0.13';
 =head NAME
 
 Net::Google::CalendarV3 - Access Google Calendars using the v3 API
@@ -75,7 +75,7 @@ method add_entry ($entry) {
 
 method delete_entry ($entry) {
     my $res = $self->_service->delete('/calendars/[% calendarId %]/events/[% eventId %]', { -calendarId => $self->_current_calendar, -eventId => $entry->id });
-    die $res->error unless $res->success;
+    die $res->error unless $res->success or $res->code eq '404' or $res->code eq '410';
     1;
 }
 
